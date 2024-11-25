@@ -1,0 +1,301 @@
+@media (min-width: 992px) {
+    * {
+        font-family: "Roboto", serif;
+        margin: 0;
+        padding: 0;
+    }
+    .no{
+        color: red;
+        display: none;
+    }
+
+    nav {
+        background: #F5F5F6;
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+        height: 50px;
+        width: 100%;
+    }
+
+    nav img {
+        margin-top: 15px;
+        margin-left: 100px;
+        width: 89px;
+        height: 23px;
+    }
+
+    nav a:hover {
+        color: black;
+    }
+
+    nav a {
+        font-weight: 500;
+        margin-top: 17px;
+        font-size: 1vw;
+        text-decoration: none;
+        color: #959BA4;
+    }
+
+    nav button {
+        font-size: 70%;
+        font-weight: 500;
+        border: none;
+        border-radius: 4px;
+        background: white;
+        margin: 9px 5vw 9px 0;
+        width: 5vw;
+        height: 4.7vh;
+    }
+
+    h1 {
+        font-size: 2vw;
+        margin: 56px 0 0 22vw;
+        font-weight: 700;
+    }
+
+    .currencyContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 22.5vw 0 22.5vw;
+    }
+
+    .from,
+    .to {
+        width: 22.5vw;
+        margin: 33px 0 0 0;
+    }
+
+    .from p,
+    .to p {
+        color: #9F9F9F;
+        width: 120px;
+        height: 28px;
+    }
+
+    .from button,
+    .to button {
+        font-weight: 400;
+        border: #e5e5e5 solid 1px;
+        color: #C6C6C6;
+        background-color: white;
+        width: 25%;
+        height: 28px;
+    }
+
+    .fromCurrency,
+    .toCurrency {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        width: 100%;
+    }
+
+    .fromCurrency .RUB,
+    .to .RUB {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    .fromCurrency .GBP,
+    .to .GBP {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .active {
+        background-color: #833AE0 !important;
+        color: white !important;
+    }
+
+    .fromRectangle,
+    .toRectangle {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        border: #e5e5e5 1px solid;
+        border-radius: 3px;
+        width: 100%;
+        height: 100.4px;
+    }
+
+    .fromRectangle input,
+    .to input {
+        outline: none;
+        margin-top: 11px;
+        border: none;
+        font-size: 36px;
+        font-weight: 700;
+        margin-left: 16px;
+    }
+
+    .fromRectangle input::-webkit-inner-spin-button,
+    .fromRectangle input::-webkit-outer-spin-button,
+    .to input::-webkit-inner-spin-button,
+    .to input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
+    .fromRectangle .exchange,
+    .to .exchange {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #C6C6C6;
+        font-weight: 400;
+        background-color: white;
+    }
+}
+
+@media (max-width: 992px) {
+
+    html {
+        width: 100%;
+    }
+    .no{
+        color: red;
+        display: none;
+    }
+
+    * {
+        font-family: "Roboto", serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background: #F5F5F6;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        height: 20vw;
+        width: 100%;
+    }
+
+    nav img {
+        justify-self: center;
+        width: 20vw;
+        height: 5vw;
+    }
+
+    nav a:hover {
+        color: black;
+    }
+
+    nav a {
+        text-align: center;
+        font-weight: 500;
+        font-size: 3.5vw;
+        text-decoration: none;
+        color: #959BA4;
+    }
+
+    nav button {
+        font-weight: 500;
+        border: none;
+        border-radius: 4px;
+        background: white;
+        height: 80%;
+        font-size: 3.5vw;
+        width: 60%;
+        justify-self: center;
+    }
+
+    h1 {
+        font-size: 8vw;
+        margin: 56px 0 0 15vw;
+        font-weight: 700;
+    }
+
+    .currencyContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 15vw 0 15vw;
+    }
+
+    .from,
+    .to {
+        width: 60vw;
+        margin: 33px 0 0 0;
+    }
+
+    .from p,
+    .to p {
+        color: #9F9F9F;
+        width: 120px;
+        height: 28px;
+    }
+
+    .from button,
+    .to button {
+        font-weight: 400;
+        border: #e5e5e5 solid 1px;
+        color: #C6C6C6;
+        background-color: white;
+        width: 25%;
+        height: 28px;
+        font-size: 80%;
+    }
+
+    .fromCurrency,
+    .toCurrency {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        width: 100%;
+    }
+
+    .fromCurrency .RUB,
+    .to .RUB {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    .fromCurrency .GBP,
+    .to .GBP {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .active {
+        background-color: #833AE0 !important;
+        color: white !important;
+    }
+
+    .fromRectangle,
+    .toRectangle {
+        display: flex;
+        flex-direction: column;
+        border: #e5e5e5 1px solid;
+        border-radius: 3px;
+        width: 100%;
+        height: 20vw;
+    }
+
+    .fromRectangle input,
+    .to input {
+        outline: none;
+        border: none;
+        margin-top: 2vw;
+        font-size: 8vw;
+        font-weight: 700;
+        margin-left: 16px;
+    }
+
+    .fromRectangle input::-webkit-inner-spin-button,
+    .fromRectangle input::-webkit-outer-spin-button,
+    .to input::-webkit-inner-spin-button,
+    .to input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
+    .fromRectangle .exchange,
+    .to .exchange {
+        height: 4vw;
+        margin-top: 2vw;
+        font-size: 3vw;
+        color: #C6C6C6;
+        font-weight: 400;
+        background-color: white;
+    }
+}

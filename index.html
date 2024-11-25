@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor</title>
+</head>
+
+<body>
+    <nav>
+        <img src="icon_banka.jpg">
+        <a href="">BANK</a>
+        <a href="">BUSINESS</a>
+        <a href="">INVESTMENTS</a>
+        <a href="">INSURANCE</a>
+        <a href="">MOBILE</a>
+        <a href="">TRIPS</a>
+        <a href="">ENTERTAINMENT</a>
+        <button>LOGIN</button>
+    </nav>
+    <h1>Online currency converter</h1>
+    <div class="currencyContainer">
+        <div class="from">
+            <p>From amount</p>
+            <div class="fromCurrency">
+                <button class="RUB active">RUB</button>
+                <button>USD</button>
+                <button>EUR</button>
+                <button class="GBP">GBP</button>
+            </div>
+            <div class="fromRectangle">
+                <input type="text">
+                <input class="exchange" type="text" disabled>
+            </div>
+        </div>
+        <div class="to">
+            <p>To amount</p>
+            <div class="toCurrency">
+                <button class="RUB">RUB</button>
+                <button class="active">USD</button>
+                <button>EUR</button>
+                <button class="GBP">GBP</button>
+            </div>
+            <div class="toRectangle">
+                <input type="text">
+                <input class="exchange" type="text" disabled>
+            </div>
+        </div>
+    </div>
+    <h1 class="no">No internet!</h1>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
